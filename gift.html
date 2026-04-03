@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Birthday Gift 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <style>
+    /* Gift page fades in on load */
+    body { opacity: 0; transition: opacity .8s ease; }
+    body.loaded { opacity: 1; }
+  </style>
+</head>
+<body>
+
+  <!-- Confetti lives at top of page -->
+  <div id="confetti-container"></div>
+
+  <!-- ── Section 1: Big Message ── -->
+  <section class="section msg-section">
+    <div class="card glow-card">
+      <div class="card-icon">🎂</div>
+      <h2>To the most amazing person in my universe</h2>
+      <p>
+        Today the world gets a little brighter because it's YOUR day. 
+        Every smile you give, every laugh we share, every moment with you 
+        is a gift I never want to return. 
+        You make ordinary days feel extraordinary — and today, 
+        I want you to feel as special as you truly are.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Section 2: Reasons I Love You ── -->
+  <section class="section reasons-section">
+    <h2 class="section-title">Reasons I love you 💌</h2>
+    <div class="reasons-grid">
+      <div class="reason-card" data-delay="0">
+        <span class="reason-icon">😂</span>
+        <p>Your laugh is literally my favourite sound in the world.</p>
+      </div>
+      <div class="reason-card" data-delay="100">
+        <span class="reason-icon">🌙</span>
+        <p>You make even the simplest nights feel like adventures.</p>
+      </div>
+      <div class="reason-card" data-delay="200">
+        <span class="reason-icon">💪</span>
+        <p>Your strength and resilience inspire me every single day.</p>
+      </div>
+      <div class="reason-card" data-delay="300">
+        <span class="reason-icon">🤝</span>
+        <p>You always know exactly what to say when I need it most.</p>
+      </div>
+      <div class="reason-card" data-delay="400">
+        <span class="reason-icon">✨</span>
+        <p>You light up every room you walk into — effortlessly.</p>
+      </div>
+      <div class="reason-card" data-delay="500">
+        <span class="reason-icon">❤️</span>
+        <p>You love with your whole heart, and that is rare and beautiful.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Section 3: Memory Timeline ── -->
+  <section class="section timeline-section">
+    <h2 class="section-title">Our story so far 📖</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="tl-content">
+          <span class="tl-icon">💫</span>
+          <h3>The day we met</h3>
+          <p>From that very first moment, something felt different. I knew you were special.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="tl-content">
+          <span class="tl-icon">🌹</span>
+          <h3>Our first date</h3>
+          <p>Nervous smiles and butterflies — I couldn't stop thinking about you after.</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="tl-content">
+          <span class="tl-icon">🔑</span>
+          <h3>When I knew</h3>
+          <p>There was a quiet moment when I realised — I never want a day without you.</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="tl-content">
+          <span class="tl-icon">🎂</span>
+          <h3>Today — your birthday!</h3>
+          <p>And here we are, celebrating you. My favourite person. Always.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Section 4: Countdown to Next Year ── -->
+  <section class="section countdown-section">
+    <h2 class="section-title">Until your next birthday… ⏳</h2>
+    <div class="countdown-grid">
+      <div class="cd-box"><span id="cd-days">000</span><label>Days</label></div>
+      <div class="cd-box"><span id="cd-hours">00</span><label>Hours</label></div>
+      <div class="cd-box"><span id="cd-mins">00</span><label>Minutes</label></div>
+      <div class="cd-box"><span id="cd-secs">00</span><label>Seconds</label></div>
+    </div>
+  </section>
+
+  <!-- ── Section 5: Final Love Letter ── -->
+  <section class="section letter-section">
+    <div class="letter">
+      <div class="letter-header">💌 A letter from my heart</div>
+      <p>Happy Birthday, my love.</p>
+      <p>
+        Words will never be enough to tell you how much you mean to me. 
+        But I want you to know that waking up knowing you're in my life is 
+        the best feeling in the world. 
+      </p>
+      <p>
+        I promise to celebrate you — not just today, but every single day. 
+        I promise to always be your biggest fan, your safest place, 
+        and the person who loves you unconditionally.
+      </p>
+      <p>Here's to you, to us, and to every beautiful moment still ahead. 🥂</p>
+      <p class="letter-sign">Forever yours,<br/><em>Yours truly 💖</em><br/><em>Mir Mayasir</em></p>
+    </div>
+  </section>
+
+  <!-- Floating balloon decoration -->
+  <div id="balloons"></div>
+
+  <script src="gift.js"></script>
+</body>
+</html>
